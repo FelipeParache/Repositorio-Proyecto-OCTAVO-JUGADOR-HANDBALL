@@ -21,9 +21,7 @@ header {
 
 header .navbar {
     padding: 10px 100px;
-    margin: 5px 10px;
-    border: solid 3px black;
-    border-radius: 100px;
+    border-bottom: solid 3px black;
     background: goldenrod;
     color: white;
     align-items: center;
