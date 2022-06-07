@@ -11,7 +11,7 @@
 
 header {
     width: 100%;
-    height: 200px;
+    height: 180px;
 }
 
  .navbar .container-fluid {
@@ -137,6 +137,11 @@ header .navegacion nav ul li a {
     left: 10px;
 }
 
+#bloque-noticias figure figcaption a {
+    text-decoration: none;
+    color: black;
+}
+
 #bloque-noticias figure:hover figcaption {
     background-color: white;
 }
@@ -158,6 +163,22 @@ header .navegacion nav ul li a {
     color: grey;
     font-size: 24px;
     font-style: italic;
+}
+
+#post figure {
+    margin: 0;
+}
+
+#post figure figcaption {
+    color: grey;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#post p {
+    font-size: 1.2rem;
+    color: rgb(50, 50, 50);
+    line-height: 30px;
 }
 
 /* footer */
@@ -189,4 +210,19 @@ footer .menu li a{
     background-color: black;
     border-radius: 50px;
     border: solid 2px white;
+}
+
+@media only screen and (max-width: 1088px) {
+    
+    .fila {
+        flex-direction: row;
+    }
+
+    header .container-fluid {
+        flex-direction: column;
+    }
+
+    header .navegacion nav ul {
+        display: none;
+    }
 }
