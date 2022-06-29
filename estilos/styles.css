@@ -4,9 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif; }
-
-ul {
-  padding-left: 0; }
+  * p {
+    margin-bottom: 0; }
+  * ul {
+    padding-left: 0; }
 
 header {
   width: 100%;
@@ -41,59 +42,48 @@ header {
         font-style: italic; }
 
 .container {
-  height: auto;
-  margin: 25px auto;
-  width: 1124px; }
-  .container .fila {
-    width: 100%;
-    display: flex; }
-    .container .fila .columna-izquierda {
-      width: 65%; }
-      .container .fila .columna-izquierda article {
-        height: 100%; }
-    .container .fila .columna-derecha {
-      width: 35%; }
-      .container .fila .columna-derecha article {
-        height: 50%; }
-    .container .fila article {
-      display: flex;
-      flex-direction: column;
-      padding-right: 3%;
-      height: 100%; }
-      .container .fila article h1 {
-        margin: 25px 0 20px 0;
-        font-size: 36px; }
-      .container .fila article h2 {
-        margin-bottom: 5px;
-        font-size: 24px;
-        flex-grow: 1; }
-      .container .fila article p {
-        font-size: 20px;
-        color: grey;
-        padding: 20px;
-        margin-bottom: 15px;
-        flex-grow: 1; }
-      .container .fila article img {
-        width: 100%;
-        padding-bottom: 5px;
-        border-bottom: 1px solid lightgrey; }
-      .container .fila article figure {
-        position: relative;
-        margin-bottom: 25px; }
-        .container .fila article figure:hover figcaption {
-          background-color: white; }
-        .container .fila article figure figcaption {
-          width: auto;
-          padding: 15px;
-          border-radius: 10px;
-          font-style: italic;
-          background: rgba(255, 255, 255, 0.5);
-          position: absolute;
-          bottom: 20px;
-          left: 10px; }
-          .container .fila article figure figcaption a {
-            text-decoration: none;
-            color: black; }
+  margin: 25px auto; }
+  .container .row .columna-izquierda article {
+    height: 100%; }
+  .container .row .columna-derecha article {
+    height: 50%; }
+  .container .row article {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .container .row article h1 {
+      font-size: 36px;
+      flex-grow: 1; }
+    .container .row article h2 {
+      margin-bottom: 5px;
+      font-size: 22px;
+      flex-grow: 1; }
+    .container .row article p {
+      margin: 1rem auto;
+      font-size: 20px;
+      color: grey;
+      flex-grow: 1; }
+    .container .row article img {
+      width: 100%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid lightgrey; }
+    .container .row article figure {
+      position: relative;
+      margin-bottom: 25px; }
+      .container .row article figure:hover figcaption {
+        background-color: white; }
+      .container .row article figure figcaption {
+        width: auto;
+        padding: 15px;
+        border-radius: 10px;
+        font-style: italic;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: 20px;
+        left: 10px; }
+        .container .row article figure figcaption a {
+          text-decoration: none;
+          color: black; }
 
 #post {
   height: auto;
