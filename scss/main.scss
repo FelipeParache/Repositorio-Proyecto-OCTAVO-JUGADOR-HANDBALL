@@ -5,11 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    
+    p {
+        margin-bottom: 0;
+    }
+    
+    ul {
+        padding-left: 0;
+    }
 }
 
-ul {
-    padding-left: 0;
-}
+
 
 // HEADER
 header {
@@ -62,24 +68,18 @@ header {
 
 // NEWS FEED
 .container {
-    height: auto;
     margin: 25px auto;
-    width: 1124px;
 
-    .fila {
-        width: 100%;
-        display: flex;
+    .row {
 
         .columna-izquierda {
-            width: 65%;
-
+        
             article {
                 height: 100%;
             }
         }
 
         .columna-derecha {
-            width: 35%;
 
             article {
                 height: 50%;
@@ -89,25 +89,23 @@ header {
         article {
             display: flex;
             flex-direction: column;
-            padding-right: 3%;
             height: 100%;
 
             h1 {
-                margin: 25px 0 20px 0;
                 font-size: 36px;
+                flex-grow: 1;
             }
 
             h2 {
                 margin-bottom: 5px;
-                font-size: 24px;
+                font-size: 22px;
                 flex-grow: 1;
             }
             
             p {
+                margin: 1rem auto;
                 font-size: 20px;
                 color: grey;
-                padding: 20px;
-                margin-bottom: 15px;
                 flex-grow: 1;
             }
 
