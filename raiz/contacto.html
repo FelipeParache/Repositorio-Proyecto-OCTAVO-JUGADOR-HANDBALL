@@ -12,23 +12,46 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../imagenes/OCTAVO JUGADOR HANDBALL.png" alt="logoOctavo">
+                    <img src="../imagenes/OCTAVO JUGADOR HANDBALL.png" alt="logoOctavo" class="d-inline-block aling-text-center"> OCTAVO JUGADOR
                 </a>
-                <h1>OCTAVO JUGADOR HANDBALL</h1>
-                <div class="navegacion"> <!--Contenedor de navegacion-->
-                    <nav> <!--Barra de navegacion-->
-                        <ul> <!--Inicio lista desordenada-->
-                            <li><a href="../index.html">INICIO</a></li> <!--Elementos de la lista-->
-                            <li><a href="./metro.html">HANDBALL METROPOLITANO</a></li> <!--Links a las demas pags-->
-                            <li><a href="./selec.html">SELECCIONES</a></li>
-                            <li><a href="./beach.html">BEACH HANDBALL</a></li>
-                            <li><a href="./contacto.html">CONTACTANOS</a></li>
-                            <li><a href="./nota.html">NOTA</a></li>
-                        </ul> <!--Fin de lista desordenada-->
-                    </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OCTAVO JUGADOR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav m-3 justify-content-end">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">CABALLEROS</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Liga de Honor Oro</a></li>
+                                <li><a class="dropdown-item" href="#">Liga de Honor Plata</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">DAMAS</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Liga de Honor Oro</a></li>
+                                <li><a class="dropdown-item" href="#">Liga de Honor Plata</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">SELECCIONES</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../raiz/selec.html">Los Gladiadores</a></li>
+                                <li><a class="dropdown-item" href="#">La Garra</a></li>
+                                <li><a class="dropdown-item" href="../raiz/beach.html">Beach</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../raiz/contacto.html">NOSOTROS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -96,7 +119,8 @@
                     <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
                     </svg> Volver al inicio</a></li>
             </ul>
-            <p>OCTAVO JUGADOR HANDBALL</p>
+            <p><b>OCTAVO JUGADOR HANDBALL ®</b></p>
+            <p>HANDBALL CONTADO POR HANDBOLRXS</p>
         </nav>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
