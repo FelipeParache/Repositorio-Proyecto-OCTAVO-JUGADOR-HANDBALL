@@ -105,7 +105,8 @@ header .navegacion ul {
   #post p {
     font-size: 1.2rem;
     color: #323232;
-    line-height: 30px; }
+    line-height: 30px;
+    margin-bottom: 20px; }
   #post figure figcaption {
     color: grey;
     font-size: 14px;
