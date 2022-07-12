@@ -28,7 +28,15 @@ header {
             .container-fluid {
                 justify-content: center;
                 flex-wrap: nowrap;
-                align-items: baseline;
+
+                #logo {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin-left: 10px;
+                    }
+                }
 
                 .navbar-brand {
                     font-size: 2rem;
@@ -225,4 +233,40 @@ footer{
             }
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    
+    header {
+
+        .navbar {
+
+            .container-fluid {
+                flex-direction: column-reverse;
+
+                #logo {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    footer {
+
+        .redes {
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin: 10px 0px;
+                }
+            }
+        }
+    }
+
 }
