@@ -5,53 +5,69 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
-}
-
-ul {
-    padding-left: 0;
+    
+    p {
+        margin-bottom: 0;
+    }
+    
+    ul {
+        padding-left: 0;
+    }
 }
 
 // HEADER
 header {
-    width: 100%;
-    height: 180px;
 
     .navbar {
-    padding: 10px 100px;
-    border-bottom: solid 2px black;
-    background: goldenrod;
-    color: white;
-    align-items: center;
+        padding: 10px 90px;
+        background: grey;
+        align-items: center;
+        box-shadow: 0px 0px 5px 3px;
+        border-bottom: solid 2px black;
 
-        .container-fluid {
-        justify-content: center;
+            .container-fluid {
+                justify-content: center;
+                flex-wrap: nowrap;
 
-            img {
-                width: 110px;
-                margin-right: 5px;
+                #logo {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin-left: 10px;
+                    }
+                }
+
+                .navbar-brand {
+                    font-size: 2rem;
+                    color: black;
+
+                    &:hover {
+                        color: white;
+                        text-shadow: black 0px 0px 10px;
+                    }
+
+                    img {
+                    height: 125px;
+                    width: 125px;
+                    }
+                }
             }
         }
-    }
 
     .navegacion {
 
         ul {
-            width: 100%;
-            height: 100%;
             list-style-type: none;
             display: flex;
-            justify-content: center;
+            align-items: center;
 
             li {
-                width: auto;
-                height: 100%;
                 padding: 5px;
                 margin: 0 10px;
 
                 a {
-                    font-weight: bold;
                     color: white;
-                    border-radius: 100px;
                     font-size: 1rem;
                     font-style: italic;
                 }
@@ -62,24 +78,18 @@ header {
 
 // NEWS FEED
 .container {
-    height: auto;
     margin: 25px auto;
-    width: 1124px;
 
-    .fila {
-        width: 100%;
-        display: flex;
+    .row {
 
         .columna-izquierda {
-            width: 65%;
-
+        
             article {
                 height: 100%;
             }
         }
 
         .columna-derecha {
-            width: 35%;
 
             article {
                 height: 50%;
@@ -89,25 +99,23 @@ header {
         article {
             display: flex;
             flex-direction: column;
-            padding-right: 3%;
             height: 100%;
 
             h1 {
-                margin: 25px 0 20px 0;
                 font-size: 36px;
+                flex-grow: 1;
             }
 
             h2 {
                 margin-bottom: 5px;
-                font-size: 24px;
+                font-size: 22px;
                 flex-grow: 1;
             }
             
             p {
+                margin: 1rem auto;
                 font-size: 20px;
                 color: grey;
-                padding: 20px;
-                margin-bottom: 15px;
                 flex-grow: 1;
             }
 
@@ -150,9 +158,7 @@ header {
 
 // NOTICIA
 #post {
-    height: auto;
     margin: 25px auto;
-    width: 1124px;
 
     article {
         display: flex;
@@ -175,17 +181,16 @@ header {
         margin-bottom: 20px;
         color: grey;
         font-size: 24px;
-        font-style: italic;
     }
 
     p {
         font-size: 1.2rem;
         color: rgb(50, 50, 50);
         line-height: 30px;
+        margin-bottom: 20px;
     }
 
     figure {
-        margin: 0;
 
         figcaption {
             color: grey;
@@ -199,15 +204,12 @@ header {
 footer{
 
     .redes {
-        background-color: goldenrod;
-        width: 100%;
+        background-color: grey;
         padding: 1rem;
         border-top: solid 2px black;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        align-content: center;
 
         ul {
             list-style: none;
@@ -220,10 +222,9 @@ footer{
                     display: block;
                     padding: 5px 10px;
                     text-decoration: none;
-                    color: goldenrod;
-                    background-color: black;
+                    color: black;
                     border-radius: 50px;
-                    border: solid 2px white;
+                    border: solid 2px black;
 
                     &:hover {
                         color: white;
@@ -232,4 +233,40 @@ footer{
             }
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    
+    header {
+
+        .navbar {
+
+            .container-fluid {
+                flex-direction: column-reverse;
+
+                #logo {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    footer {
+
+        .redes {
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin: 10px 0px;
+                }
+            }
+        }
+    }
+
 }
